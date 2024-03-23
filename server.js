@@ -413,7 +413,7 @@ app.delete('/delproblem/:pb_id', function(req,res){
 
 
 // //set port
-app.listen(port, function () {
+app.listen(3306, function () {
     console.log('Node app is running on port '+port);
 
 });
