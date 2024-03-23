@@ -5,6 +5,7 @@ const multer = require('multer');
 let mysql = require('mysql');
 const path = require('path');
 const fs = require('fs');
+let port = process.env.PORT || 3000;
 
 
 app.use(express.json());
@@ -412,8 +413,8 @@ app.delete('/delproblem/:pb_id', function(req,res){
 
 
 // //set port
-app.listen(4000, function () {
-    console.log('Node app is running on port 3000');
+app.listen(port, function () {
+    console.log('Node app is running on port '+port);
 
 });
 
