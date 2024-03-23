@@ -39,6 +39,15 @@ dbConn.connect((err) => {
     console.log('my SQL connecting successfully');
 });
 
+// //set port
+app.listen(3306, function () {
+    console.log('Node app is running on port 3306');
+
+});
+
+module.exports = app;
+
+
 // ตั้งค่า Multer Storage
 const storage = multer.diskStorage({
     destination: function (req, file, cb) {
@@ -413,8 +422,8 @@ app.delete('/delproblem/:pb_id', function(req,res){
 
 
 // //set port
-app.listen(3306, function () {
-    console.log('Node app is running on port 3306');
+app.listen(port, function () {
+    console.log('Node app is running on port'+port);
 
 });
 
