@@ -26,7 +26,7 @@ app.get('/', function (req, res) {
 
 let dbConn = mysql.createConnection({
     host: 'localhost',
-    user: 'itweb166_itweb166',
+    user: 'itweb1666',
     password: 'IfXgvF5kSi3f',
     database: 'itweb166_db_pagunplook',
 });
