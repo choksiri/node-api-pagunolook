@@ -24,7 +24,7 @@ app.get('/', function (req, res) {
 });
 
 
-let dbConn = mysql.createConnection({
+let dbConn = mysql.createPool({
     host: 'localhost',
     user: 'itweb1666',
     password: 'IfXgvF5kSi3f',
@@ -414,7 +414,7 @@ app.delete('/delproblem/:pb_id', function(req,res){
 
 // //set port
 app.listen(3306, function () {
-    console.log('Node app is running on port '+port);
+    console.log('Node app is running on port 3306');
 
 });
 
