@@ -24,7 +24,7 @@ app.get('/', function (req, res) {
 });
 
 
-let dbConn = mysql.createPool({
+let dbConn = mysql.createConnection({
     host: 'localhost',
     user: 'itweb1666',
     password: 'IfXgvF5kSi3f',
