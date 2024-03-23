@@ -26,9 +26,9 @@ app.get('/', function (req, res) {
 
 let dbConn = mysql.createConnection({
     host: 'localhost',
-    user: 'root',
-    password: '',
-    database: 'db_pagunplook',
+    user: 'itweb166_itweb166',
+    password: 'IfXgvF5kSi3f',
+    database: 'itweb166_db_pagunplook',
 });
 
 dbConn.connect((err) => {
